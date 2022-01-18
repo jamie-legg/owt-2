@@ -44,6 +44,21 @@ const UserInfo = () => {
           onClose={() => setAccountsModalOpen(false)}
           isOpen={accountsModalOpen}
         ></AccountsModal>
+        <h1 className="text-6xl font-bold mx-6 my-9">Your Dashboard</h1>
+        <div className="flex w-full justify-between">
+          <p className="text-xl mx-6 my-9">
+            Current: 2459
+            <br></br>
+            Season High: 2986
+          </p>
+          <div className="w-96 h-72  bg-indigo-100 rounded-2xl grid grid-cols-12">
+            <div className="w-full h-full bg-indigo-200 rounded-2xl"></div>
+          </div>
+        </div>
+        <div className="flex w-full justify-between">
+          <h1 className="text-3xl font-bold mx-6 my-9">Account Progress</h1>
+          <h1 className="text-3xl font-bold mx-6 my-9">Saved Replays</h1>
+        </div>
       </>
     )
   } else {
